@@ -1,0 +1,28 @@
+{
+  "name": "malta-jslint",
+  "version": "0.0.5",
+  "description": "Malta plugin to ",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://fedeghe@github.com/fedeghe/malta-jslint.git"
+  },
+  "keywords": [
+    "malta",
+    "malta plugin",
+    "malta jslint",
+    "malta jslint plugin"
+  ],
+  "author": "Federico Ghedina <federico.ghedina@gmail.com>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/fedeghe/malta-jslint/issues"
+  },
+  "dependencies": {
+    "jslint": "^0.10.3",
+    "malta": ">=3.0.0"
+  },
+  "main": "./index.js"
+}
