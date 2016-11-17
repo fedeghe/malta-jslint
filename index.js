@@ -9,7 +9,13 @@ function malta_lint(o, options) {
 
 	var self = this,
 		start = new Date(),
-		msg;
+		msg,
+        pluginName = path.basename(path.dirname(__filename)),
+		doErr = function (e) {
+			console.log(('[ERROR on ' + o.name + ' using ' + pluginName + '] :').red());
+			console.dir(e);
+			self.stop();
+		};
 
 	options = options || {};
 
