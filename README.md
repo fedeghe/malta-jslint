@@ -1,3 +1,10 @@
+---
+[![npm version](https://badge.fury.io/js/malta-jslint.svg)](http://badge.fury.io/js/malta-jslint)
+[![Dependencies](https://david-dm.org/fedeghe/malta-jslint.svg)](https://david-dm.org/fedeghe/malta-jslint)
+[![npm downloads](https://img.shields.io/npm/dt/malta-jslint.svg)](https://npmjs.org/package/malta-jslint)
+[![npm downloads](https://img.shields.io/npm/dm/malta-jslint.svg)](https://npmjs.org/package/malta-jslint)  
+---  
+
 This plugin can be used on: **.js** files and even on **.coffee** and **.ts** files after using the right plugin
 
 Options : all options of the [jslint package](http://jslint.com/help.html)
