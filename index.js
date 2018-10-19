@@ -2,8 +2,7 @@ require('malta').checkDeps('jslint');
 
 var lintStream = require("jslint").LintStream,
 	lint,
-	path = require('path'),
-	fs = require('fs');
+	path = require('path');
 
 function malta_lint(o, options) {
 
