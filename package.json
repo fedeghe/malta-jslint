@@ -21,8 +21,7 @@
         "url": "https://github.com/fedeghe/malta-jslint/issues"
     },
     "dependencies": {
-        "jslint": "^0.10.3",
-        "malta": "^4.0.4"
+        "jslint": "0.12.1"
     },
     "main": "./index.js"
 }

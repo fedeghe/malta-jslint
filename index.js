@@ -1,15 +1,15 @@
-require('malta').checkDeps('jslint');
+const lintStream = require("jslint").LintStream,
+    path = require('path');
 
-var lintStream = require("jslint").LintStream,
-	lint,
-	path = require('path');
+let lint;
 
 function malta_lint(o, options) {
 
-	var self = this,
+	const self = this,
 		start = new Date(),
-		msg,
         pluginName = path.basename(path.dirname(__filename));
+
+    let msg;
 
 	options = options || {};
 
@@ -22,7 +22,7 @@ function malta_lint(o, options) {
 	options['for'] = 'for' in options ? !!options['for'] : true;
 	
 
-	lint = new lintStream(options || {});
+	lint = lint || new lintStream(options || {});
 
 	return function (solve, reject){
 
@@ -31,9 +31,7 @@ function malta_lint(o, options) {
 		lint.on('data', function (chunk, encoding, callback) {
 			self.log_info('Jslint says'.invert());
 			
-			// console.log(chunk)
-
-			var errs = chunk.linted.errors,
+			let errs = chunk.linted.errors,
 				out, i=0;
 			for (e in errs) {
 				if (e && errs[e] && 'raw' in errs[e]){
